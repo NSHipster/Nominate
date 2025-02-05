@@ -78,6 +78,10 @@ to build and run the app.
 - [ ] Allow Dock icon as drop target for files
 - [ ] Extend functionality to rename images using [`llama3.2-vision`][llama3.2-vision]
 
+## License
+
+Nominate is released under the [MIT License](/LICENSE.md).
+
 [homebrew]: https://brew.sh
 [llama3.2]: https://ollama.com/library/llama3.2
 [llama3.2-vision]: https://ollama.com/blog/llama3.2-vision
