@@ -153,6 +153,7 @@ class ContentViewModel: ObservableObject {
     private var processingQueue: [PDFFile] = []
     private var isProcessing = false
     @Published var alertItem: AlertItem?
+    private var quickLookDataSource: QuickLookDataSource?
 
     func handleDrop(providers: [NSItemProvider]) -> Bool {
         for provider in providers {
@@ -277,7 +278,8 @@ class ContentViewModel: ObservableObject {
         guard let panel = QLPreviewPanel.shared() else { return }
 
         let previewItem = file.url as NSURL
-        panel.dataSource = QuickLookDataSource(item: previewItem)
+        quickLookDataSource = QuickLookDataSource(item: previewItem)
+        panel.dataSource = quickLookDataSource
 
         if !panel.isVisible {
             panel.makeKeyAndOrderFront(nil)
