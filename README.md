@@ -70,6 +70,7 @@ to build and run the app.
 
 ## Future Enhancements
 
+- [ ] Pre-built releases available for download
 - [ ] Improve user-facing error messages
 - [ ] Create onboarding flow for Ollama and model installation
 - [ ] Implement model selection settings
