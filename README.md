@@ -19,9 +19,7 @@ Nominate does this for me automatically.
 See this file, `Scan2025-02-03_123456.pdf`?
 Let's drag-and-drop it into Nominate.
 
-![Nominate.app - Drag and drop PDF files onto the area above](https://github.com/user-attachments/assets/d35f1db0-1bf2-43e0-bc5d-0df237459ba2)
-
-Nominate uses a combination of new fangled AI and old school NLP techniques
+Nominate uses a combination of new-fangled AI and old-school NLP techniques
 to extract a timestamp and summary of the document's contents,
 which get massaged into a short, descriptive filename.
 
@@ -32,7 +30,7 @@ which get massaged into a short, descriptive filename.
 ![Nominate.app - Suggestion to rename file](https://github.com/user-attachments/assets/c9c31ef8-0a1d-4106-94ea-a034774fdf72)
 
 Moments later, Nominate suggests a new filename:
-`2025-01-31 Mercury Bank Statement.pdf`.  
+`2025-01-31 Bank Statement.pdf`.  
 _Much better!_
 
 Go ahead and click the <kbd>Apply</kbd> button to rename the file.
