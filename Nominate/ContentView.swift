@@ -108,7 +108,7 @@ struct ContentView: View {
 
             Spacer()
 
-            if let generatedFilename = file.generatedFilename {
+            if file.generatedFilename != nil {
                 HStack {
                     Button("Apply") { viewModel.applyFilename(for: file) }
                         .buttonStyle(.borderedProminent)
