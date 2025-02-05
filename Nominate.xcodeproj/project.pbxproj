@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F895D9212D538186009AC241 /* Ollama in Frameworks */ = {isa = PBXBuildFile; productRef = F895D9202D538186009AC241 /* Ollama */; };
 		F8C6EF2C2CA97F12008C6B19 /* Ollama in Frameworks */ = {isa = PBXBuildFile; productRef = F8C6EF2B2CA97F12008C6B19 /* Ollama */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F895D9212D538186009AC241 /* Ollama in Frameworks */,
 				F8C6EF2C2CA97F12008C6B19 /* Ollama in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,6 +120,7 @@
 			name = Nominate;
 			packageProductDependencies = (
 				F8C6EF2B2CA97F12008C6B19 /* Ollama */,
+				F895D9202D538186009AC241 /* Ollama */,
 			);
 			productName = Nominate;
 			productReference = F8C6EEFC2CA97C43008C6B19 /* Nominate.app */;
@@ -202,7 +205,7 @@
 			mainGroup = F8C6EEF32CA97C43008C6B19;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				F8C6EF2A2CA97F12008C6B19 /* XCLocalSwiftPackageReference "../ollama-swift" */,
+				F895D91F2D538186009AC241 /* XCRemoteSwiftPackageReference "ollama-swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F8C6EEFD2CA97C43008C6B19 /* Products */;
@@ -415,7 +418,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mattt.Nominate;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nshipster.Nominate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -441,7 +444,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mattt.Nominate;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nshipster.Nominate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -553,14 +556,23 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		F8C6EF2A2CA97F12008C6B19 /* XCLocalSwiftPackageReference "../ollama-swift" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = "../ollama-swift";
+/* Begin XCRemoteSwiftPackageReference section */
+		F895D91F2D538186009AC241 /* XCRemoteSwiftPackageReference "ollama-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mattt/ollama-swift/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F895D9202D538186009AC241 /* Ollama */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F895D91F2D538186009AC241 /* XCRemoteSwiftPackageReference "ollama-swift" */;
+			productName = Ollama;
+		};
 		F8C6EF2B2CA97F12008C6B19 /* Ollama */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Ollama;

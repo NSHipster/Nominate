@@ -3,7 +3,7 @@ import NaturalLanguage
 import Ollama
 
 /// The model to use for tasks.
-private let model = "llama3.2"
+private let model: Model.ID = "llama3.2"
 
 /// A date formatter for YYYY-MM-DD format.
 private let dateFormatter: DateFormatter = {

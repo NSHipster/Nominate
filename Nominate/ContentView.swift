@@ -149,7 +149,7 @@ struct ContentView: View {
 
 class ContentViewModel: ObservableObject {
     @Published var pdfFiles: [PDFFile] = []
-    private let client = Ollama.Client()
+    private let client: Ollama.Client = .default
     private var processingQueue: [PDFFile] = []
     private var isProcessing = false
     @Published var alertItem: AlertItem?
