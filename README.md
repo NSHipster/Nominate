@@ -68,6 +68,32 @@ xed .
 In the menu bar, select Product > Run (<kbd>⌘</kbd><kbd>R</kbd>)
 to build and run the app.
 
+## Implementation Details
+
+Nominate is a native macOS app written in SwiftUI.
+Please do not take this as any kind of endorsement.
+To paraphrase
+[Werner Herzog describing his feelings about French](https://www.youtube.com/watch?v=ZXY9iSqDbSQ):
+
+> I do understand SwiftUI, but I refuse to write it. 
+> It's the last thing I would ever do.
+> \[...\]
+> For this project I had to write a few things in SwiftUI.
+> I regret it.
+
+Nominate uses the [`ollama-swift` package][ollama-swift-package]
+to interact with Ollama via its [HTTP server API][ollama-api],
+which runs at `http://localhost:11434/api/`.
+
+Apple's [PDFKit framework][pdfkit] is used for
+<abbr title="Optical Character Recognition">OCR</abbr>.
+The [NaturalLanguage framework][naturallanguage] is used to 
+[lemmatize][lemmatization] and remove filler words from filenames.
+The [Foundation framework's][foundation] `DateFormatter` class
+is used to parse and format dates found in the PDF.
+
+Nominate's UI was inspired by [ImageOptim][imageoptim] by Kornel Lesiński.
+
 ## Future Enhancements
 
 - [ ] Pre-built releases available for download
@@ -83,9 +109,16 @@ to build and run the app.
 
 Nominate is released under the [MIT License](/LICENSE.md).
 
+[foundation]: https://developer.apple.com/documentation/foundation
 [homebrew]: https://brew.sh
-[llama3.2]: https://ollama.com/library/llama3.2
+[imageoptim]: https://imageoptim.com/mac
+[lemmatization]: https://en.wikipedia.org/wiki/Lemmatization
 [llama3.2-vision]: https://ollama.com/blog/llama3.2-vision
-[ollama]: https://ollama.com
+[llama3.2]: https://ollama.com/library/llama3.2
+[naturallanguage]: https://developer.apple.com/documentation/naturallanguage
+[ollama-api]: https://github.com/ollama/ollama/blob/main/docs/api.md
 [ollama-download]: https://ollama.com/download
+[ollama-swift-package]: https://github.com/mattt/ollama-swift
+[ollama]: https://ollama.com
+[pdfkit]: https://developer.apple.com/documentation/pdfkit
 [quick-action]: https://support.apple.com/guide/mac-help/perform-quick-actions-in-the-finder-on-mac-mchl97ff9142/mac
