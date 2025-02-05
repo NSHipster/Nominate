@@ -2,7 +2,9 @@
 
 Nominate is a macOS app that renames PDFs based on their contents.
 
-![Nominate.app - Drag and drop PDF files onto the area above](https://github.com/user-attachments/assets/d35f1db0-1bf2-43e0-bc5d-0df237459ba2)
+<video src="https://github.com/user-attachments/assets/f42663ac-952a-4924-868a-c4a9d1b18436" width="100%" autoplay loop muted playsinline>
+  <source src="https://github.com/user-attachments/assets/f42663ac-952a-4924-868a-c4a9d1b18436" type="video/mp4">
+</video>
 
 ---
 
@@ -16,6 +18,8 @@ Rather than go through an rename each file all by hand,
 Nominate does this for me automatically.  
 See this file, `Scan2025-02-03_123456.pdf`?
 Let's drag-and-drop it into Nominate.
+
+![Nominate.app - Drag and drop PDF files onto the area above](https://github.com/user-attachments/assets/d35f1db0-1bf2-43e0-bc5d-0df237459ba2)
 
 Nominate uses a combination of new fangled AI and old school NLP techniques
 to extract a timestamp and summary of the document's contents,
