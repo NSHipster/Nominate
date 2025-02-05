@@ -25,3 +25,4 @@ jobs:
           xcode: ${{ matrix.xcode }}
           platform: ${{ matrix.platform }}
           action: build
+          scheme: Nominate
