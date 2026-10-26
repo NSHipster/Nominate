@@ -1,5 +1,8 @@
 # Nominate
 
+> [!NOTE]
+> Nominate is no longer maintained, and this repository is archived.
+
 Nominate is a macOS app that renames PDFs based on their contents.
 
 <video src="https://github.com/user-attachments/assets/f42663ac-952a-4924-868a-c4a9d1b18436" width="100%" autoplay loop muted playsinline>
